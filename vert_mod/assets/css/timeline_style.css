@@ -42,6 +42,10 @@ Modules - reusable parts of our design
 
 Main components 
 
+icon circle
+vertical line
+entry background (box shadow right under)
+
 -------------------------------- */
 
 #cd-timeline {
@@ -58,7 +62,7 @@ Main components
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: green;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -105,7 +109,8 @@ Main components
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  /* grey for icon circle*/
+  box-shadow: 0 0 0 4px grey, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
@@ -207,10 +212,11 @@ Main components
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
+  /* entry background */
   background: white;
   border-radius: 0.25em;
   padding: 1em;
-  box-shadow: 0 3px 0 #d7e4ed;
+  box-shadow: 0 3px 0 green;
 }
 .cd-timeline-content:after {
   content: "";
